@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>esnond: карман, из которого выглядывает червь</title>
+<meta name="description" content="профиль: симулятор нервной системы червя, движок, ключи, светодиод. нарисовано руками.">
+<style>
+  :root{--paper:#fbf6ec;--card:#fffdf6;--ink:#43323b;--mute:#7a6a70;--crayon:#9c2b47;--soft:#6f7d6a;--sky:#5b7d9e}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:17px/1.75 'Segoe Print','Bradley Hand','Comic Sans MS','Chalkboard SE',cursive}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;
+    background-image:radial-gradient(#d9cdb4 1.1px,transparent 1.4px);background-size:26px 26px;opacity:.5}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px;position:relative}
+  a{color:var(--crayon);text-decoration:underline wavy rgba(156,43,71,.5);text-underline-offset:4px}
+  .sk{border:2.2px solid var(--ink);background:var(--card);
+    border-radius:255px 18px 225px 18px/18px 225px 18px 255px;
+    box-shadow:3px 4px 0 rgba(67,50,59,.14)}
+  .sk2{border-radius:18px 225px 18px 255px/255px 18px 225px 18px}
+  .rot-l{transform:rotate(-.7deg)} .rot-r{transform:rotate(.6deg)}
+  header{padding:56px 0 28px;text-align:center}
+  .ava{width:190px;margin:0 auto 6px;padding:10px}
+  .ava img{display:block;width:100%;border-radius:12px}
+  h1{font-size:clamp(30px,5vw,44px);margin:8px 0 4px}
+  .sub{color:var(--mute);font-size:16px;margin:0}
+  section{padding:34px 0}
+  h2{font-size:24px;margin:0 0 20px}
+  .cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+  .card{padding:16px 18px}
+  .card img{width:84px;float:right;margin:-6px -6px 4px 8px;border-radius:10px;padding:4px}
+  .card h3{margin:0 0 6px;font-size:17px}
+  .card p{margin:0 0 12px;font-size:14.5px;color:var(--mute)}
+  .btn{display:inline-block;padding:5px 15px;font-size:14px;color:var(--paper);background:var(--crayon);
+    border:2px solid var(--ink);border-radius:255px 15px 225px 15px/15px 225px 15px 255px;text-decoration:none}
+  .btn.alt{background:var(--soft)} .btn.cool{background:var(--sky)}
+  .btn:hover{color:var(--paper);filter:brightness(1.07)}
+  .qa p{margin:10px 0;font-size:15.5px}
+  .qa b{color:var(--crayon)}
+  footer{padding:26px 0 46px;color:var(--mute);font-size:13.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="ava sk rot-l"><img src="assets/mascot.jpg?v=1" alt="волк восковым мелком, нарисован руками"></div>
+    <h1>esnond</h1>
+    <p class="sub">изучаю нервную систему червя. волк на картинке ни при чём, он просто олицетворяет меня.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>что тут водится</h2>
+    <div class="cards">
+      <div class="card sk rot-l"><img src="assets/alert.jpg?v=1" alt="внимательный волк">
+        <h3>proteus</h3>
+        <p>защита сети, которой управляет коннектом червя. научная работа из двух языков и каталог честных провалов.</p>
+        <a class="btn" href="https://esnond.github.io/proteus/">сайт</a>
+        <a class="btn alt" href="https://github.com/esnond/proteus">код</a>
+      </div>
+      <div class="card sk sk2 rot-r"><img src="assets/smug.jpg?v=1" alt="самодовольный волк">
+        <h3>petri</h3>
+        <p>движок симуляции червя, написан с нуля на c99. детерминированный, как стиральная машина, и такой же надёжный.</p>
+        <a class="btn alt" href="https://github.com/esnond/petri">код</a>
+      </div>
+      <div class="card sk rot-r"><img src="assets/sleep.jpg?v=1" alt="спящий волк">
+        <h3>helix</h3>
+        <p>bip39 зерно гоняет червя по коннектому, траектория становится ключом. прототип, криптография не аудирована, но честно об этом кричит.</p>
+        <a class="btn cool" href="https://github.com/esnond/helix">код</a>
+      </div>
+      <div class="card sk sk2 rot-l"><img src="assets/excited.jpg?v=1" alt="взволнованный волк">
+        <h3>sysblink</h3>
+        <p>запасной светодиод в компьютере показывает загрузку процессора. потому что почему бы и нет.</p>
+        <a class="btn alt" href="https://github.com/esnond/sysblink">код</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>частые вопросы мне самому</h2>
+    <div class="qa">
+      <p><b>почему червь?</b> потому что он маленький, у него всего 279 нейронов, и про него всё написано. слон не влез бы в демона.</p>
+      <p><b>почему волк, если изучаешь червя?</b> червь слишком короткий, чтобы олицетворять. а волк умеет смотреть с укором.</p>
+      <p><b>что общего у всех проектов?</b> всё считается до последнего байта одинаково при каждом запуске. даже светодиод моргает по расписанию.</p>
+      <p><b>что здесь мог быть?</b> серьёзное описание с ключевыми словами. но у меня лапки, а у вас есть github: код честнее любых слов.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="sk sk2 rot-l" style="display:inline-block;padding:12px 22px">
+      всё нарисовано руками: волк, сайт, движок и, к сожалению, долги по сну. · <a href="https://github.com/esnond">github.com/esnond</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
