@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/style.css?v=8">
+<link rel="stylesheet" href="assets/style.css?v=9">
 
 <title>esnond: карман, из которого выглядывает червь</title>
 <meta name="description" content="профиль: симулятор нервной системы червя, движок, ключи, светодиод. нарисовано руками.">
@@ -13,7 +13,7 @@
 
 <header class="center">
   <div class="wrap">
-    <div class="ava sk rot-l"><img src="assets/mascot.jpg?v=1" alt="волк восковым мелком, нарисован руками"></div>
+    <div class="ava sk rot-l"><img src="assets/mascot.jpg?v=1" alt="волк восковым мелком, талисман сайта"></div>
     <h1>esnond</h1>
     <p class="sub">изучаю нервную систему червя. волк на картинке просто талисман: следит за порядком и здоровается с гостями.</p>
   </div>
@@ -21,37 +21,47 @@
 
 <section>
   <div class="wrap">
-    <h2>что тут водится</h2>
+    <h2>семья коннектома</h2>
+    <p style="color:var(--mute);font-size:15px;margin:0 0 16px">корень и то, что из него построено.</p>
     <div class="cards">
-      <div class="card sk rot-l"><img loading="lazy" src="assets/alert.jpg?v=1" alt="внимательный волк">
-        <h3>proteus <span class="flagchip" style="font-size:11px;margin-left:6px">флагман</span></h3>
-        <p>защита сети, которой управляет коннектом червя. научная работа из двух языков и каталог честных провалов.</p>
-        <a class="btn" href="https://esnond.github.io/proteus/">сайт</a>
-        <a class="btn alt" href="https://github.com/esnond/proteus">код</a>
-      </div>
-      <div class="card sk sk2 rot-r"><img loading="lazy" src="assets/smug.jpg?v=1" alt="самодовольный волк">
-        <h3>petri</h3>
-        <p>движок симуляции червя, написан с нуля на c99. детерминированный, как стиральная машина, и такой же надёжный.</p>
+      <div class="card sk sk2 rot-l"><img src="assets/smug.jpg?v=1" alt="самодовольный волк">
+        <h3>petri <span style="font-size:12px;color:var(--mute)">(корень)</span></h3>
+        <p>движок нервной системы червя, написан с нуля на c99, без единой внешней библиотеки: 279 нейронов, проводка варшней 2011, graded потенциалы, короткая синаптическая пластичность, серотонин с октопамином, тело с мышцами. каждая партия пишет журнал по 10 мс модельного времени, и тот же сид даёт тот же журнал бит в бит, это закрыто тестами. версии честные: v1.0, v1.0.1, v1.2, ошибки и правки публикуются в errata и defects. исторически это первый проект семьи: proteus вендорит его ядро, helix гоняет его ради ключей, питон ходит через ctypes.</p>
         <a class="btn alt" href="https://esnond.github.io/petri/">сайт</a>
         <a class="btn alt" href="https://github.com/esnond/petri">код</a>
       </div>
-      <div class="card sk rot-r"><img loading="lazy" src="assets/sleep.jpg?v=1" alt="спящий волк">
+      <div class="card sk rot-l"><img src="assets/alert.jpg?v=1" alt="внимательный волк">
+        <h3>proteus <span class="flagchip" style="font-size:11px;margin-left:6px">флагман</span></h3>
+        <p>защита сети, расписанием которой управляет коннектом: тик задают рефлекс и детектор, метку порта читает рукописный readout. самая строгая работа семьи: научный текст на двух языках, атлас 100 партий, 300 журналов в архиве и каталог опровержений вместо обещаний защиты.</p>
+        <a class="btn" href="https://esnond.github.io/proteus/">сайт</a>
+        <a class="btn alt" href="https://github.com/esnond/proteus">код</a>
+      </div>
+      <div class="card sk rot-r"><img src="assets/sleep.jpg?v=1" alt="спящий волк">
         <h3>helix</h3>
-        <p>bip39 зерно гоняет червя по коннектому, траектория становится ключом. прототип, криптография не аудирована, но честно об этом кричит.</p>
+        <p>bip39 зерно гоняет коннектом petri, траектория сети становится ключом, архив .dna с kyber. прототип: добавляет разнообразие ключей и цену вычислений, а не энтропию, и кричит об этом на каждом экране.</p>
         <a class="btn cool" href="https://esnond.github.io/helix/">сайт</a>
         <a class="btn cool" href="https://github.com/esnond/helix">код</a>
       </div>
-      <div class="card sk sk2 rot-l"><img loading="lazy" src="assets/excited.jpg?v=1" alt="взволнованный волк">
-        <h3>sysblink</h3>
-        <p>запасной светодиод в компьютере показывает загрузку процессора. потому что почему бы и нет.</p>
-        <a class="btn alt" href="https://esnond.github.io/sysblink/">сайт</a>
-        <a class="btn alt" href="https://github.com/esnond/sysblink">код</a>
-      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>отдельные истории</h2>
+    <p style="color:var(--mute);font-size:15px;margin:0 0 16px">они живут своей жизнью, без общего ядра.</p>
+    <div class="cards">
       <div class="card sk sk2 rot-r"><img src="assets/halo.jpg?v=1" alt="волк с нимбом">
-        <h3>eidolon</h3>
-        <p>600 виртуальных пациентов прячут цифровой след 90 дней. сильная версия гипотезы опровергнута измерениями, слабая выжила.</p>
+        <h3>eidolon <span style="font-size:12px;color:var(--mute)">(другая группа)</span></h3>
+        <p>отдельное исследование маскировки цифрового следа, червя тут нет: 600 виртуальных пациентов девяносто дней живут в синтетических медицинских системах, 24 скрытых параметра, повторная идентификация, прогноз активности. пререгистрация, c99 генератор плюс python статистика, данные открыты под cc by 4.0. результат смешанный и опубликован как есть: интенсивная маскировка отдаляет профиль от естественного многообразия (17.10 против 3.83), но коллапсирует его в 58 уникальных векторов на 600 окон, то есть делает человека заметным шаблоном, а не призраком. строгая версия гипотезы опровергнута, отклонения от пререгистрации опубликованы отдельным файлом. v1.3.0, сделано при участии ии с открытой декларацией.</p>
         <a class="btn" href="https://esnond.github.io/eidolon/">сайт</a>
         <a class="btn alt" href="https://github.com/esnond/eidolon">код</a>
+      </div>
+      <div class="card sk rot-l"><img src="assets/excited.jpg?v=1" alt="взволнованный волк">
+        <h3>sysblink</h3>
+        <p>запасной светодиод компьютера становится приборкой: установщик собирает крошечного c демона из шаблона, и лампочка показывает загрузку, память или температуру. десять патчей, пять систем инициализации, бинарник 16 кб.</p>
+        <a class="btn alt" href="https://esnond.github.io/sysblink/">сайт</a>
+        <a class="btn alt" href="https://github.com/esnond/sysblink">код</a>
       </div>
     </div>
   </div>
@@ -62,7 +72,7 @@
     <h2>частые вопросы мне самому</h2>
     <div class="qa">
       <p><b>почему червь?</b> потому что он маленький, у него всего 279 нейронов, и про него всё написано. слон не влез бы в демона.</p>
-      <p><b>почему волк, если изучаешь червя?</b> червь слишком короткий, чтобы олицетворять. а волк умеет смотреть с укором.</p>
+      <p><b>почему волк, если изучаешь червя?</b> червь рисуется за две секунды и не выражает ничего, а волк получился с характером.</p>
       <p><b>что общего у всех проектов?</b> всё считается до последнего байта одинаково при каждом запуске. даже светодиод моргает по расписанию.</p>
       <p><b>что здесь мог быть?</b> серьёзное описание с ключевыми словами. но у меня лапки, а у вас есть github: код честнее любых слов.</p>
     </div>
@@ -77,6 +87,5 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=6" defer></script>
 </body>
 </html>
